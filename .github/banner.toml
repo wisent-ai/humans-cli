@@ -1,0 +1,15 @@
+[automation]
+managed = true
+source_fingerprint = "76c16160c12b6a47"
+category = "developer"
+
+[banner]
+title = "Humans CLI builds. You ship faster."
+description = "Local-first human record normalization, identity resolution, and segmentation CLI"
+product = "Wisent"
+url = "wisent.com"
+theme = "dark"
+layout = "signal-left"
+art_seed = "humans-cli"
+width = 1584
+height = 396
