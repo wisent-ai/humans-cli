@@ -1,11 +1,13 @@
 [automation]
 managed = true
-source_fingerprint = "76c16160c12b6a47"
+source_fingerprint = "f3a3bd12f89a216c"
 category = "developer"
+copy_status = "missing"
+approved_in = ""
 
 [banner]
-title = "Humans CLI builds. You ship faster."
-description = "Local-first human record normalization, identity resolution, and segmentation CLI"
+title = "Humans CLI"
+description = ""
 product = "Wisent"
 url = "wisent.com"
 theme = "dark"
