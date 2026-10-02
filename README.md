@@ -9,3 +9,21 @@
 <!-- wisent-readme-signals:end -->
 
 # humans-cli
+
+Local-first normalization, identity resolution and segmentation of human
+records. Commands read local JSON and contact no remote system. Every
+command prints deterministic JSON, or with `--text` one `path: value` line
+per field from the same document.
+
+| Command | What it prints |
+|---|---|
+| `humans normalize --human <human.json>` | the record in canonical form |
+| `humans duplicates --humans <humans.json>` | groups of records that share an identity |
+| `humans merge --humans <humans.json> [--target-id <id>]` | one merged record (the first is the base; `--target-id` renames it) and the fields that conflicted |
+| `humans segment --humans <humans.json> --segment <segment.json>` | the records the segment selects |
+| `humans summarize --humans <humans.json>` | counts of records, identities, duplicate groups, identity types, tags and consent |
+
+`--help` works on the program and on every command. Exit 2: the invocation
+is wrong (unknown command or flag, missing argument); exit 1: an input file
+could not be read, is not valid JSON, or was refused, with the reason on
+stderr.
