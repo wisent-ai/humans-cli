@@ -8,6 +8,7 @@
 pub mod dedupe;
 pub mod normalize;
 pub mod segments;
+pub mod sheet;
 pub mod summary;
 
 use std::collections::BTreeMap;
